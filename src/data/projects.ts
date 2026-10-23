@@ -19,7 +19,11 @@ export const projectsData: IProject[] = [
       "Message commercial percutant avec offre d'appel bien visible et contact direct",
       "Format haute définition adapté aux campagnes publicitaires et réseaux sociaux (TikTok, WhatsApp, Facebook)"
     ],
-    images: ["/projects/hub-livraison.jpg"],
+    images: [
+      "/projects/hub-livraison.jpg",
+      "/projects/le-marche-du-monde.jpg",
+      "/projects/mienssah-boutique.jpg"
+    ],
     featuredImage: "/projects/hub-livraison.jpg",
     demoLinks: [
       { label: "Page TikTok (Lien à venir)", url: "#" }
