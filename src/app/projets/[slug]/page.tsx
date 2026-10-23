@@ -126,15 +126,17 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
           {project.images && project.images.length > 1 && (
             <section>
-              <h2 className="text-2xl font-bold text-[var(--foreground)] mb-6">Aperçus de la plateforme</h2>
+              <h2 className="text-2xl font-bold text-[var(--foreground)] mb-6">
+                {project.category === 'Affiches' ? 'Mini galerie & Déclinaisons du visuel' : 'Aperçus de la plateforme'}
+              </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {project.images.slice(1).map((img, idx) => (
-                  <div key={idx} className="rounded-xl overflow-hidden bg-[var(--card)] border border-[var(--border)] p-3 flex items-center justify-center">
+                  <div key={idx} className="rounded-xl overflow-hidden bg-[var(--card)] border border-[var(--border)] p-3 flex items-center justify-center group hover:border-[var(--primary)] transition-all">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img 
                       src={img} 
-                      alt={`Capture d'écran ${idx + 2} - ${project.title}`} 
-                      className="max-h-[550px] w-auto max-w-full rounded-lg object-contain shadow-lg"
+                      alt={`Visuel complémentaire ${idx + 2} - ${project.title}`} 
+                      className="max-h-[550px] w-auto max-w-full rounded-lg object-contain shadow-lg group-hover:scale-[1.02] transition-transform duration-300"
                       loading="lazy"
                     />
                   </div>

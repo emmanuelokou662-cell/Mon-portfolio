@@ -142,5 +142,29 @@ export const projectsData: IProject[] = [
     ],
     images: ["/projects/abidjan-tech-forum.jpg"],
     featuredImage: "/projects/abidjan-tech-forum.jpg"
+  },
+  {
+    id: "spots-publicitaires-video",
+    slug: "spots-publicitaires-video",
+    title: "Spots Publicitaires & Créations Vidéo",
+    type: "Client",
+    date: "2026",
+    role: "Montage Vidéo, Motion Design & Direction Artistique",
+    category: "Vidéo",
+    needs: "Créer des formats publicitaires dynamiques, percutants et engageants pour booster la visibilité et l'impact commercial sur les plateformes numériques (TikTok, Instagram Reels, WhatsApp).",
+    solution: "Production et montage de spots vidéo rythmés combinant un travail précis sur le son, le découpage, les transitions dynamiques et l'intégration de sous-titres et call-to-actions percutants.",
+    contribution: "Scénarisation, sélection des plans, montage dynamique, sound design, colorimétrie et adaptation aux formats verticaux haute définition.",
+    tools: ["Montage Vidéo", "Direction Artistique", "Sound Design", "Formats Verticaux (Reels/TikTok)"],
+    results: [
+      "Vidéos haute définition avec rendu fluide et dynamique",
+      "Format vertical optimisé pour la viralité et la conversion sur mobile",
+      "Rythme énergique captant l'attention dès les 3 premières secondes"
+    ],
+    images: [],
+    videos: [
+      "/videos/spot-publicitaire-1.mp4",
+      "/videos/spot-publicitaire-2.mp4"
+    ],
+    featuredImage: "/videos/spot-publicitaire-1.mp4"
   }
 ];
