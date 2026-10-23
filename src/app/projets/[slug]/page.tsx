@@ -56,7 +56,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               <div key={idx} className="flex flex-col items-center bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 shadow-2xl">
                 <div className="w-full flex justify-between items-center mb-3 px-2">
                   <span className="text-xs uppercase tracking-wider font-bold text-[var(--primary)]">
-                    Spot IA #{idx + 1}
+                    {project.category === 'IA' ? `Spot IA #${idx + 1}` : `Vidéo #${idx + 1}`}
                   </span>
                   <span className="text-xs text-[var(--muted-foreground)]">Format Vertical / Reels</span>
                 </div>
